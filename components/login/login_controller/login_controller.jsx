@@ -692,7 +692,25 @@ class LoginController extends React.PureComponent {
                 </a>,
             );
         }
-
+        // THREEFOLD
+        loginControls.push(
+            <a
+                className='btn btn-custom-login threefold'
+                key='tfconnect'
+                href={Client4.getOAuthRoute() + '/tfconnect/login' + this.props.location.search}
+            >
+                <span>
+                    <span className='icon'/>
+                    <span>
+                        <FormattedMessage
+                            id='login.tfconnect'
+                            defaultMessage='TFConnect'
+                        />
+                    </span>
+                </span>
+            </a>, 
+        );
+         //ENDTHREEFOLD
         if (googleSigninEnabled) {
             loginControls.push(
                 <a

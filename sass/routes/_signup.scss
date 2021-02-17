@@ -349,6 +349,17 @@ body {
                     background-image: url('../images/gitlabLogo.png');
                 }
             }
+            &.threefold {
+                background: #5484c3;
+
+                &:hover {
+                    background: darken(#3d69a1, 10%);
+                }
+
+                .icon {
+                    background-image: url('../images/threefoldLogo.png');
+                }
+            }
 
             &.google {
                 background: #dd4b39;
