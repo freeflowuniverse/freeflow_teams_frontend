@@ -171,7 +171,24 @@ export default class SignupController extends React.PureComponent {
                 </Link>,
             );
         }
-
+        signupControls.push(
+            <a
+                className='btn btn-custom-login btn--full threefold'
+                key='tfconnect'
+                href={Client4.getOAuthRoute() + '/tfconnect/signup' + window.location.search}
+            >
+                <span>
+                    <span className='icon'/>
+                    <span>
+                        <FormattedMessage
+                            id='signup.tfconnect'
+                            defaultMessage='TFConnect Single Sign-On'
+                        />
+                    </span>
+                </span>
+            </a>,
+        );
+    
         if (this.props.enableSignUpWithGitLab) {
             signupControls.push(
                 <a
