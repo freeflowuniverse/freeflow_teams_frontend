@@ -116,8 +116,7 @@ export default class SecurityTab extends React.PureComponent<Props, State> {
         const currentPassword = this.state.currentPassword;
         const newPassword = this.state.newPassword;
         const confirmPassword = this.state.confirmPassword;
-
-        if (currentPassword === '') {
+        if (currentPassword === '' && false) {
             this.setState({
                 passwordError: Utils.localizeMessage(
                     'user.settings.security.currentPasswordError',
@@ -239,7 +238,7 @@ export default class SecurityTab extends React.PureComponent<Props, State> {
             const inputs = [];
             let submit;
 
-            if (this.props.user.auth_service === '') {
+            if (this.props.user.auth_service === '' || true) {
                 submit = this.submitPassword;
 
                 inputs.push(

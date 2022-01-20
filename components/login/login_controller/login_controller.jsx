@@ -545,8 +545,8 @@ class LoginController extends React.PureComponent {
         const office365SigninEnabled = this.props.enableSignUpWithOffice365;
         const openIdSigninEnabled = this.props.enableSignUpWithOpenId;
         const samlSigninEnabled = this.state.samlEnabled;
-        const usernameSigninEnabled = this.state.usernameSigninEnabled;
-        const emailSigninEnabled = this.state.emailSigninEnabled;
+        const usernameSigninEnabled = false;
+        const emailSigninEnabled = false;
 
         if (emailSigninEnabled || usernameSigninEnabled || ldapEnabled) {
             let errorClass = '';
